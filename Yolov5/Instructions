@@ -1,6 +1,7 @@
 OBJECT DETECTION USING YOLOV5:
 
-Use the following commands to set up the environment to perform inference using YOLOv5 by Ultralytics. We use the pretrained "yolov5s.pt" weights to get target child frames to get rid of the noise and to improve the data quality.
+Use the following commands to set up the environment to perform inference using YOLOv5 by Ultralytics. We use the pretrained "yolov5s.pt" weights to get 
+target child frames to get rid of the noise and to improve the data quality.
 
 Clone the YOLOv5 Github repository:
 $ git clone https://github.com/ultralytics/yolov5
