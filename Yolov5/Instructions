@@ -1,1 +1,28 @@
+OBJECT DETECTION USING YOLOV5:
+
+Use the following commands to set up the environment to perform inference using YOLOv5 by Ultralytics. We use the pretrained "yolov5s.pt" weights to get target child frames to get rid of the noise and to improve the data quality.
+
+Clone the YOLOv5 Github repository:
+$ git clone https://github.com/ultralytics/yolov5
+
+Change directory to yolov5:
+cd yolov5
+
+Create conda environment with python 3.8:
+conda create --name yolov5-env python=3.8
+
+Activate conda environment:
+conda activate yolov5-env
+
+Install required packages using requirements.txt file:
+pip install -r requirements.txt
+
+Perform inference by executing the detect.py script: 
+python detect.py --weights yolov5s.pt --classes 0 --save-crop --source '/home/aleenahkahn/ASD/SSBD dataset/
+
+NOTE:
+--classes 0 refers to the "Person" class.
+--save-crop helps in getting the cropped frames saved as individual files. 
+
+With the help of YOLOv5, we obtained the cropped frames of the target children which will help in more accurate ASB behavior recognition results.
 
